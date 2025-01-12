@@ -3,7 +3,7 @@
 ## Description
 Kata bank account is an API that allows users to manage all transactions of their bank account
 
-the principle transactions are : (withdraw, deposit, account statement).
+The principle transactions are : (withdrawl, deposit, operations history).
 
 We developed all the transactions of the kata with the TDD methodology.
 
@@ -18,3 +18,20 @@ $ mvn clean test
 ## Run spring boot application
 ```bash
 $ mvn spring-boot:run
+
+```
+
+## REST API
+```bash
+POST  http://localhost:8080/account/139P560/save-operation
+
+```
+
+```bash
+POST  http://localhost:8080/account/139P560/save-operation
+
+```
+
+```bash
+GET  http://localhost:8080/account/139P560/operations
+```
